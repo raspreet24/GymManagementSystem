@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router();
 const MemberController = require('../Controllers/member')
-const auth = require('../Auth/auth')
+const auth = require('../DBConn/Auth/auth')
 
 
 router.get('/all-member',auth,MemberController.getAllMember);
